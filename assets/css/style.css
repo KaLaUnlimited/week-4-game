@@ -5,8 +5,8 @@ body{
 	background: url("https://www.toptal.com/designers/subtlepatterns/patterns/geometry.png");
 }
 .container{
-	width: 100%
-	margin-left: 0px;
+	width: 100%;
+	margin-left: 17px;
 	padding-left: 0px;
 }
 h1{
@@ -15,20 +15,22 @@ h1{
 	color:purple;
 	margin-left: 0px;
 	width: 68%;
-	padding: 18px;
-    text-align: center;
+	padding-left: 20px;
+	
+    text-align: left;
 }
 p{
 	background: url(https://www.toptal.com/designers/subtlepatterns/patterns/wormz.png);
 	color:green;
-	font-size: 18px;
+	font-size: 16px;
+	margin-top: 11px;
 	margin-left: 0px;
 	font-weight: bolder;
-	width: 60%;
-    padding: 64px;
+	width: 79%;
+    padding: 15px;
 }
 .metrics{
-	margin-top: 30px;
+	margin-top: 10px;
 	font-size: 20px;
 }
 .display{
@@ -54,6 +56,14 @@ p{
 }
 .blueTopazImg{
 	background: url(https://cdn.pixabay.com/photo/2017/09/24/20/41/birthstone-2783129__340.png);
+	background-size: 124px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: grey;
+}
+
+.pearlImg{
+	background: url(https://cdn.pixabay.com/photo/2017/09/24/20/43/birthstone-2783144__340.png);
 	background-size: 124px;
 	border-style: solid;
 	border-width: 2px;
