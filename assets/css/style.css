@@ -1,7 +1,26 @@
 body{
 
-	
+	font-family: 'Indie Flower', cursive;
 	background: url("https://www.toptal.com/designers/subtlepatterns/patterns/geometry.png");
+}
+
+h1{
+	background: url(https://www.toptal.com/designers/subtlepatterns/patterns/halftone-yellow.png);
+	font-family: 'Indie Flower', cursive;
+	color:purple;
+	margin-left: 170px;
+	width: 68%;
+	padding: 18px;
+    text-align: center;
+}
+p{
+	background: url(https://www.toptal.com/designers/subtlepatterns/patterns/wormz.png);
+	color:green;
+	font-size: 18px;
+	margin-left: 93px;
+	font-weight: bolder;
+	width: 60%;
+    padding: 64px;
 }
 
 #buttonOne{
