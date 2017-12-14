@@ -31,7 +31,7 @@
 function round(targetNumber){
 	var win =0;
 		var loss=0;
-var total =0;
+	var total =0;
    
   	 $( ".game").click(function() {
  		
