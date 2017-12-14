@@ -1,5 +1,12 @@
 
+	 var win =0;
+	var loss=0;
+	var total =0;
+	var targetNumber; 
+
+
     $('#beginBtn').click(function(){
+        targetNumber = (Math.floor(Math.random()*101)+19);
         var gem =[];
         for (var i = 0; i < 4; i++) {
             var randNumber = (Math.floor(Math.random()*12));
@@ -15,36 +22,39 @@
          $('#buttonFour').val(gem[3]);
  
 
- var targetNumber = (Math.floor(Math.random()*101)+19);
- $("#targetNumber").text(targetNumber);
- var win=0;
- var loss=0;
  
-  
+ $("#targetNumber").text(targetNumber);
+ $("#winNumber").text(win);
+ $("#lossNumber").text(loss);
 
- round(targetNumber);
+
+
+
   });
 
     
 
 
-function round(targetNumber){
-	var win =0;
-		var loss=0;
-	var total =0;
+
+	
    
-  	 $( ".game").click(function() {
+  	 $(".game").click(function() {
  		
  		 total +=(parseInt($(this).val()));
   		if(total>targetNumber){
+		
+		$("#score").text(total);
 			alert("Game over try again! Hit start to restart your score");
 			loss++;
 			total=0;
-			$("#score").text(total);
+
+			
 		}
 		if(total===targetNumber){
+		$("#total").text(total);
 		alert("You won the game!");
 		win++;
+		$("#winNumber").text(win);
 		//randNumber=
 }	
 		
@@ -57,7 +67,7 @@ function round(targetNumber){
 		
   				
 });
-  	}
+  	
 
    // function reset(){
  // 	alert("new game!");
