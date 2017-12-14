@@ -1,14 +1,19 @@
 body{
 
 	font-family: 'Indie Flower', cursive;
+	font-weight: bolder;
 	background: url("https://www.toptal.com/designers/subtlepatterns/patterns/geometry.png");
 }
-
+.container{
+	width: 100%
+	margin-left: 0px;
+	padding-left: 0px;
+}
 h1{
 	background: url(https://www.toptal.com/designers/subtlepatterns/patterns/halftone-yellow.png);
 	font-family: 'Indie Flower', cursive;
 	color:purple;
-	margin-left: 170px;
+	margin-left: 0px;
 	width: 68%;
 	padding: 18px;
     text-align: center;
@@ -17,14 +22,33 @@ p{
 	background: url(https://www.toptal.com/designers/subtlepatterns/patterns/wormz.png);
 	color:green;
 	font-size: 18px;
-	margin-left: 93px;
+	margin-left: 0px;
 	font-weight: bolder;
 	width: 60%;
     padding: 64px;
 }
+.metrics{
+	margin-top: 30px;
+	font-size: 20px;
+}
+.display{
+	background: #DCDCDC;
+	width: 30%;
+	padding-left: 10px;
+}
+
+.citrineImg{
+	background-image: url(https://cdn.pixabay.com/photo/2017/09/24/20/42/birthstone-2783130__340.png ) ;
+	width: 10px
+	height:10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: grey;
+}
 
 #buttonOne{
-
+width: 237px;
+height: 274px;
 
 }
 

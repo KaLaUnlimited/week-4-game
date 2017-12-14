@@ -43,20 +43,22 @@
  		 total +=(parseInt($(this).val()));
   		if(total>targetNumber){
 		
-		$("#score").text(total);
+			$("#score").text(total);
 			alert("Game over try again! Hit start to restart your score");
 			loss++;
 			total=0;
-
-			
 		}
+
 		if(total===targetNumber){
-		$("#total").text(total);
-		alert("You won the game!");
-		win++;
-		$("#winNumber").text(win);
+			$("#total").text(total);
+			alert("You won the game!");
+			win++;
+			$("#winNumber").text(win);
 		//randNumber=
 }	
+		// if(total typeof ===NaN){
+		// 	alert("Please click on start button to start game");
+		// }
 		
 		
 		
