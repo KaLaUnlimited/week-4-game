@@ -38,31 +38,47 @@ p{
 }
 
 .citrineImg{
-	background-image: url(https://cdn.pixabay.com/photo/2017/09/24/20/42/birthstone-2783130__340.png ) ;
-	width: 10px
-	height:10px;
+	background: url(https://cdn.pixabay.com/photo/2017/09/24/20/42/birthstone-2783130__340.png ) ;
+	background-size: 124px;
 	border-style: solid;
 	border-width: 2px;
 	border-color: grey;
 }
 
-#buttonOne{
-width: 237px;
-height: 274px;
+.amethystImg{
+	background: url(https://cdn.pixabay.com/photo/2017/09/22/21/33/birthstone-2777148__340.jpg );
+	background-size: 124px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: grey;
+}
+.blueTopazImg{
+	background: url(https://cdn.pixabay.com/photo/2017/09/24/20/41/birthstone-2783129__340.png);
+	background-size: 124px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: grey;
+}
 
+#buttonOne {
+width: 132px;
+height: 170px;
 }
 
 #buttonTwo{
-
+width: 132px;
+height: 170px;
 	
 }
 
 #buttonThree{
-
+width: 132px;
+height: 170px;
 	
 }
 
 #buttonFour{
-
+width: 132px;
+height: 170px;
 	
 }
