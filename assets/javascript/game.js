@@ -26,7 +26,7 @@
          $('#buttonFour').val(gem[3]);
  
 
- 
+ $("#currentNumber").empty();
  $("#targetNumber").text(targetNumber);
  $("#winNumber").text(win);
  $("#lossNumber").text(loss);
@@ -77,7 +77,7 @@
 		// 	alert("Please click on start button to start game");
 		// }
 		
-		
+});
   	
 
   
