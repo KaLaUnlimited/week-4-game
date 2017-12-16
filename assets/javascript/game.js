@@ -6,8 +6,11 @@
 
 
     $('#beginBtn').click(function(){
-       // targetNumber = (Math.floor(Math.random()*101)+19);
-        targetNumber=20;
+    	win=0;
+    	loss=0;
+    	currentNumber=0;
+        targetNumber = (Math.floor(Math.random()*101)+19);
+       //testing code: targetNumber=20;
         var gem =[];
         for (var i = 0; i < 4; i++) {
             var randNumber = (Math.floor(Math.random()*12));
@@ -48,10 +51,10 @@
 			
 			loss++;
 			$("#lossNumber").text(loss);
-			;
+			
 				$("#currentNumber").text(currentNumber);
 			 	
-			 	alert("current number: " + currentNumber + " Game over try again! Hit start to restart your score");
+			 	alert("current number: " + currentNumber + " Game over try again! New target number!");
 			
 			targetNumber= (Math.floor(Math.random()*101) +19);
 			$("#targetNumber").text(targetNumber);
@@ -60,14 +63,18 @@
 		}
 
 
-// 		if(total===targetNumber){
-// 			$("#total").text(total);
-// 			win++;
-// 			$("#winNumber").text(win);
+		if(currentNumber===targetNumber){
+		//	$("#currentNumber").text(currentNumber);
+			win++;
+			$("#winNumber").text(win);
 		
-// 			alert("You won the game!");
-// 		//randNumber=
-// }	
+			alert("Current number: " + currentNumber+ " You won this round! New target number!");
+		
+			targetNumber=(Math.floor(Math.random()*101) +19);
+			$("#targetNumber").text(targetNumber);
+			currentNumber=0;
+			$("#currentNumber").empty();
+}
 		// if(total typeof ===NaN){
 		// 	alert("Please click on start button to start game");
 		// }
