@@ -52,7 +52,7 @@
 			
 				$("#currentNumber").text(currentNumber);
 			 	
-			 	alert("current number: " + currentNumber + " Game over try again! New target number!");
+			 	alert("current number: " + currentNumber + " You lose this round! New target number!");
 			
 			targetNumber= (Math.floor(Math.random()*101) +19);
 			$("#targetNumber").text(targetNumber);
