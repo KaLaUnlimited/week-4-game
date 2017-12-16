@@ -33,27 +33,27 @@
   });
 
     
-
-
-
-	
-   
   	 $(".game").click(function() {
  		
  		 total +=(parseInt($(this).val()));
+  		$("#score").text(total);
   		if(total>targetNumber){
-		
-			$("#score").text(total);
-			alert("Game over try again! Hit start to restart your score");
 			loss++;
+			$("#lossNumber").text(loss);
 			total=0;
+			alert("Game over try again! Hit start to restart your score");
+			targetNumber= (Math.floor(Math.random()*101) +19);
+			$("#targetNumber").text(targetNumber);
+
+			
 		}
 
 		if(total===targetNumber){
 			$("#total").text(total);
-			alert("You won the game!");
 			win++;
 			$("#winNumber").text(win);
+		
+			alert("You won the game!");
 		//randNumber=
 }	
 		// if(total typeof ===NaN){
