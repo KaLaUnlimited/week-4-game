@@ -73,18 +73,11 @@
 			currentNumber=0;
 			$("#currentNumber").empty();
 }
-		// if(currentNumber typeof  === number){
+		// if($(currentNumber).val()  === "NaN"){
 		// 	alert("Please click on start button to start game");
 		// }
 		
 		
-		
-	
-
-		
-		
-  				
-});
   	
 
   
