@@ -1,12 +1,13 @@
 
 	 var win =0;
 	var loss=0;
-	var total =0;
+	var currentNumber =0;
 	var targetNumber; 
 
 
     $('#beginBtn').click(function(){
-        targetNumber = (Math.floor(Math.random()*101)+19);
+       // targetNumber = (Math.floor(Math.random()*101)+19);
+        targetNumber=20;
         var gem =[];
         for (var i = 0; i < 4; i++) {
             var randNumber = (Math.floor(Math.random()*12));
@@ -32,30 +33,41 @@
 
   });
 
+	
     
   	 $(".game").click(function() {
- 		
- 		 total +=(parseInt($(this).val()));
-  		$("#score").text(total);
-  		if(total>targetNumber){
+ 	//	$("#currentNumber").text(currentNumber);
+ 		 currentNumber +=(parseInt($(this).val()));
+		
+		// if(currentNumber<targetNumber){
+		// 	$("#currentNumber").text(currentNumber);
+		// }
+  		$("#currentNumber").text(currentNumber);
+  		 
+  		 if(currentNumber>targetNumber){
+			
 			loss++;
 			$("#lossNumber").text(loss);
-			total=0;
-			alert("Game over try again! Hit start to restart your score");
+			;
+				$("#currentNumber").text(currentNumber);
+			 	
+			 	alert("current number: " + currentNumber + " Game over try again! Hit start to restart your score");
+			
 			targetNumber= (Math.floor(Math.random()*101) +19);
 			$("#targetNumber").text(targetNumber);
-
-			
+			currentNumber=0;
+			$("#currentNumber").empty();
 		}
 
-		if(total===targetNumber){
-			$("#total").text(total);
-			win++;
-			$("#winNumber").text(win);
+
+// 		if(total===targetNumber){
+// 			$("#total").text(total);
+// 			win++;
+// 			$("#winNumber").text(win);
 		
-			alert("You won the game!");
-		//randNumber=
-}	
+// 			alert("You won the game!");
+// 		//randNumber=
+// }	
 		// if(total typeof ===NaN){
 		// 	alert("Please click on start button to start game");
 		// }
@@ -63,7 +75,7 @@
 		
 		
 
-		$("#score").text(total);
+	//	$("#score").text(total);
 
 		
 		
