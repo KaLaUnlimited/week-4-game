@@ -39,12 +39,10 @@
 	
     
   	 $(".game").click(function() {
- 	//	$("#currentNumber").text(currentNumber);
+ 
  		 currentNumber +=(parseInt($(this).val()));
 		
-		// if(currentNumber<targetNumber){
-		// 	$("#currentNumber").text(currentNumber);
-		// }
+		
   		$("#currentNumber").text(currentNumber);
   		 
   		 if(currentNumber>targetNumber){
@@ -64,7 +62,7 @@
 
 
 		if(currentNumber===targetNumber){
-		//	$("#currentNumber").text(currentNumber);
+		
 			win++;
 			$("#winNumber").text(win);
 		
@@ -75,14 +73,13 @@
 			currentNumber=0;
 			$("#currentNumber").empty();
 }
-		// if(total typeof ===NaN){
+		// if(currentNumber typeof  === number){
 		// 	alert("Please click on start button to start game");
 		// }
 		
 		
 		
-
-	//	$("#score").text(total);
+	
 
 		
 		
@@ -90,36 +87,4 @@
 });
   	
 
-   // function reset(){
- // 	alert("new game!");
- // 	var 
-
- // }
-
   
-
-
-
-  	 
-
-
-//     $('#buttonOne').on('click', function() {
-//               var buttonOneValue = gem[0];
-//               $('#score').text(buttonOneValue);
-     
-//         });
-//        $('#buttonTwo').on('click', function() {
-//               var buttonTwoValue = gem[1];
-      
-//         });
-//        $('#buttonThree').on('click', function() {
-//       var buttonThreeValue = gem[2];
-      
-//         });
-//        $('#buttonFour').on('click', function() {
-//       var buttonFourValue = gem[3];
-          
-//         });
-    
-// }
-// startBtn();
