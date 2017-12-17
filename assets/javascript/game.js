@@ -3,9 +3,11 @@
 	var loss=0;
 	var currentNumber =0;
 	var targetNumber; 
+	var gameButtonoOff=false;
 
 //start button including initializing current number and the target number and displaying on DOM
     $('#beginBtn').click(function(){
+    	gameButtonoOff=true;
     	win=0;
     	loss=0;
     	currentNumber=0;
@@ -41,7 +43,9 @@
   	 $(".game").click(function() {
  	//concatenating current number variables with each click and displaying updated values to DOM
  		 currentNumber +=(parseInt($(this).val()));
-		
+		if(gameButtonoOff===false){
+			alert("Please click start button to play the game!");
+		}
 		
   		$("#currentNumber").text(currentNumber);
   		 //current number and target number for scoring
@@ -74,9 +78,12 @@
 			currentNumber=0;
 			$("#currentNumber").empty();
 }
+
 		// if($(currentNumber).val()  === "NaN"){
 		// 	alert("Please click on start button to start game");
 		// }
+			
+		
 		
 });
   	
