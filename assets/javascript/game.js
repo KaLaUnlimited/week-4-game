@@ -15,7 +15,7 @@
        //testing code: targetNumber=20;
         var gem =[];
         for (var i = 0; i < 4; i++) {
-            var randNumber = (Math.floor(Math.random()*12));
+            var randNumber = (Math.floor(Math.random()*11)+1);
             gem.push(randNumber);
          };
  
@@ -44,7 +44,9 @@
  	//concatenating current number variables with each click and displaying updated values to DOM
  		 currentNumber +=(parseInt($(this).val()));
 		if(gameButtonoOff===false){
+			
 			alert("Please click start button to play the game!");
+			$("#currentNumber").empty();
 		}
 		
   		$("#currentNumber").text(currentNumber);
@@ -56,12 +58,14 @@
 			
 				$("#currentNumber").text(currentNumber);
 			 	
-			 	alert("current number: " + currentNumber + " You lose this round! New target number!");
+			 	setTimeout(function(){alert(" You lose this round! New target number!");
+					targetNumber= (Math.floor(Math.random()*101) +19);
+					$("#targetNumber").text(targetNumber);
+					currentNumber=0;
+					$("#currentNumber").empty();
+			},300)
+			 	
 			
-			targetNumber= (Math.floor(Math.random()*101) +19);
-			$("#targetNumber").text(targetNumber);
-			currentNumber=0;
-			$("#currentNumber").empty();
 		}
 		/// if current number is equal to target number win score gets incremented by one and value is displayed on DOM
 
@@ -69,14 +73,16 @@
 		
 			win++;
 			$("#winNumber").text(win);
-		
-			alert("Current number: " + currentNumber+ " You won this round! New target number!");
-		
-			targetNumber=(Math.floor(Math.random()*101) +19);
+		setTimeout(function(){alert(" You won this round! New target number!");
+				targetNumber=(Math.floor(Math.random()*101) +19);
 			$("#targetNumber").text(targetNumber);
 			// reset current number to 0 and empty DOM element
 			currentNumber=0;
 			$("#currentNumber").empty();
+
+		},300)
+			
+			
 }
 
 		// if($(currentNumber).val()  === "NaN"){
